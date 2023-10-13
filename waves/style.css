@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    float: left;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #272727;
+}
+.main{
+    background-color: rgb(17, 17, 45);
+    width: 23vw;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+.wave{
+    position: absolute;
+    width: 50vw;
+    aspect-ratio: 1/1;
+    background-color: aqua;
+    border-radius: 45%;
+    left: -64%;
+    top: 37%;
+    transform-origin: 45% 50%;
+    opacity: 0.5;
+}
+.tide-1{
+    z-index: 1;
+    animation: tide 3s linear  infinite  ;
+}
+.tide-2{
+    z-index: 2;
+    animation: tide 3s linear  infinite  ;
+    animation-delay: 1s;
+}
+.tide-3{
+    z-index: 3;
+    animation: tide 3s linear  infinite  ;
+    animation-delay: 2s;
+}
+@keyframes tide {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
