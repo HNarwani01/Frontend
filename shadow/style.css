@@ -1,0 +1,43 @@
+:root {
+    --orange: #ffbd07;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #ccc;
+}
+
+.main {
+    display: flex;
+    /* background-color: #ffbd07; */
+    width: 50vw;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 20px 10px;
+}
+.main li a{
+    padding: 20px;
+    /* background-color: aqua; */
+    padding: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000000;
+    animation: shadow 3s  infinite ease-in-out;
+    
+    /* transition: all 3s ease-in-out; */
+}
+.main li a:hover{
+    box-shadow: 0 0 5px aqua,
+                0 0 25px Aqua,
+                0 0 50px aqua,
+                0 0 200px aqua;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+}
